@@ -1,0 +1,28 @@
+
+//descriptive color variables
+
+$white          : #fff;
+$black          : #000;
+$grey           : #999;
+$mine-shaft     : #333;
+$downy          : #66cccc;
+$malibu         : #66ccff;
+$emerald        : #66cc99;
+$chestnut-rose  : #cc6666;
+$bittersweet    : #ff6666;
+$amethyst       : #9966cc;
+
+//functional color variables
+
+$color-primary      : $yellow-orange;
+$color-secondary    : $river-bed;
+
+$color-text-light   : $white;
+$color-text-base    : $grey;
+$color-text-dark    : $mine-shaft;
+
+$color-link-default : $downy;
+$color-link-visited : $mine-shaft;
+
+$color-shadow       : rgba($black, .8);
+$color-body         : $white;
