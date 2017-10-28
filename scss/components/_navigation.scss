@@ -1,0 +1,23 @@
+.nav {
+  width: 100%;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+  padding: 0;
+  @include e(item) {
+    display: block;
+    list-style: none;
+    text-align: center;
+
+    a {
+      padding: 1em;
+      display: block;
+      text-decoration: none;
+      border-radius: .2em;
+
+      &:hover {
+        color: $white;
+        background-color: $color-primary;
+      }
+    }
+  }
+}

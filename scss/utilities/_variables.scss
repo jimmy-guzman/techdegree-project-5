@@ -10,7 +10,7 @@ $malibu           : #51ddfc;
 $emerald          : #63cc82;
 $sunglo           : #e4757a;
 $coral            : #fd7856;
-$Purple           : #927bc1;
+$purple-majesty   : #927bc1;
 
 $riptide          : #80e8d1;
 $shakespeare      : #3fabca;
@@ -24,7 +24,7 @@ $vivid-tangerine  : #fd9f85;
 //functional color variables
 
 $color-primary      : $viking;
-$color-secondary    : $bright-grey;
+$color-secondary    : $malibu;
 
 $color-text-light   : $white;
 $color-text-base    : $grey;
@@ -35,3 +35,15 @@ $color-link-visited : $bright-grey;
 
 $color-shadow       : rgba($black, .8);
 $color-body         : $white;
+
+// Text
+
+$base__font-size  : 16px;
+$base__line       : 22px;
+$letter-space     : 1px;
+
+// Font Stacks
+
+$font-url--google         : 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary     : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary   : 'Helvetica Neue', Helvetica, Arial, sans-serif;
