@@ -1,15 +1,51 @@
 .container {
-  margin: 0 auto;
+  margin: 1.3em auto;
   width: 85%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.grid__row {
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.grid {
+  @include e(row) {
+    margin-top: 2.6em;
+    width: 100%;
+  }
+  @include e(col) {
+     @for $i from 1 through 12{
+      &--#{$i} {
+        @extend %grid-block;
+      }
+    }
+
+    &--3.theme__colors {
+      background-color: $french-lilac;
+    }
+
+    &--4.theme__colors {
+      background-color: $anakiwa;
+    }
+
+    &--5.theme__colors {
+      background-color: $vista-blue;
+    }
+
+    &--6.theme__colors {
+      background-color: $shakespeare;
+    }
+
+    &--7.theme__colors {
+      background-color: $sea-pink;
+    }
+
+    &--8.theme__colors {
+      background-color: $vivid-tangerine;
+    }
+
+    &--12.theme__colors {
+      background-color: $riptide;
+    }
+  }
+}
+
+.theme__colors {
+  font-weight: $font-weight--bold;
+  padding: .95em;
 }

@@ -1,0 +1,18 @@
+%btn {
+  display: block;
+  width: 100%;
+  margin: 1.3em auto;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: $br--default;
+  padding: .95em;
+  font-size: .85em;
+}
+
+%grid-block {
+  margin: .35em auto;
+  display: block;
+  border-radius: $br--default;
+  width: 100%;
+}

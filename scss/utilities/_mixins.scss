@@ -11,3 +11,29 @@
     @content;
   }
 }
+
+// media queries
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint--sm) and (max-width: $brkpoint--md) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $brkpoint--md + 1) {
+      @content;
+    }
+  }
+  @else {
+    @error "Sorry, no value could be retrieved for '#{$break}'.";
+  }
+}
+
+// flexbox
+@mixin flex($dis: null, $flow: null, $just: null, $flex: null) {
+    display: $dis;
+    flex-flow: $flow;
+    justify-content: $just;
+    flex: $flex;
+}

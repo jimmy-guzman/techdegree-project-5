@@ -1,5 +1,36 @@
 * {
   color: $grey;
-  font-size: $base__font-size ;
+  font-size: $base__font-size;
   font-family: $font-family--primary;
+}
+
+.card {
+  line-height: ($base__line/$base__font-size);
+}
+
+.headline {
+  @include m(secondary) {
+      margin-top: 5.4em;
+      font-weight: $font-weight--light;
+  }
+  @include m(primary) {
+    margin-left: 0.6em;
+    line-height: 1;
+    color: $color-primary;
+    font-weight: $font-weight--extra-bold;
+  }
+}
+
+.link {
+  color: $malibu;
+  text-decoration: none;
+  font-weight: $font-weight--bold;
+}
+
+.blockquote {
+  font-size: 1.3em;
+  padding-left: 1.15em;
+  font-style: italic;
+  border-left: solid $color-primary .4em;
+  border-radius: $br--default;
 }

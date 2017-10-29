@@ -1,0 +1,15 @@
+.img {
+  @include m(logo) {
+    display: block;
+    margin: 0 auto;
+  }
+  @include m(avatar){
+    display: block;
+    margin: 1.3em auto 4.6em;
+  }
+  @include m(frame){
+    width: 100%;
+    padding: .75em;
+    border: solid $grey 1px;
+  }
+}

@@ -1,0 +1,18 @@
+.form {
+  margin-bottom: 2.6em;
+  @include e(input) {
+    display: block;
+    width: 90%;
+    border: none;
+    border-bottom: solid $color-primary 0.4em;
+    font-weight: $font-weight--bold;
+    font-size: 0.95em;
+    padding: 0.65em;
+    margin: 0 auto 1.3em;
+  }
+  @include e(label) {
+     @include m(hidden){
+      display: none;
+    }
+  }
+}
