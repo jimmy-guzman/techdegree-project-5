@@ -24,38 +24,12 @@
         @include g-columns;
       }
     }
-
-    &--3.theme__colors {
-      background-color: $french-lilac;
-    }
-
-    &--4.theme__colors {
-      background-color: $anakiwa;
-    }
-
-    &--5.theme__colors {
-      background-color: $vista-blue;
-    }
-
-    &--6.theme__colors {
-      background-color: $shakespeare;
-    }
-
-    &--7.theme__colors {
-      background-color: $sea-pink;
-    }
-
-    &--8.theme__colors {
-      background-color: $vivid-tangerine;
-    }
-
-    &--12.theme__colors {
-      background-color: $riptide;
+    @each $number, $color in $grid-colors {
+      &--#{$number}.theme__colors {
+        background-color: $color;
+        font-weight: $font-weight--bold;
+        padding: .95em;
+      }
     }
   }
-}
-
-.theme__colors {
-  font-weight: $font-weight--bold;
-  padding: .95em;
 }

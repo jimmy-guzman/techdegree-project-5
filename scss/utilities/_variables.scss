@@ -1,3 +1,16 @@
+// font stacks
+
+$font-url--google       : 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary   : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// font weights
+
+$font-weight--thin        : 100;
+$font-weight--light       : 300;
+$font-weight--medium      : 400;
+$font-weight--bold        : 700;
+$font-weight--ultra-bold  : 900;
 
 //descriptive color variables
 
@@ -19,8 +32,16 @@ $french-lilac     : #deb2ee;
 $vista-blue       : #88d9a0;
 $sea-pink         : #ec9fa3;
 $vivid-tangerine  : #fd9f85;
-/*
-$g-colors {
+
+$ui-colors: (
+  default : $malibu,
+  success : $emerald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $purple-majesty
+);
+
+$grid-colors: (
   3: $french-lilac,
   4: $anakiwa,
   5: $vista-blue,
@@ -28,8 +49,8 @@ $g-colors {
   7: $sea-pink,
   8: $vivid-tangerine,
   12: $riptide
+);
 
-*/
 //functional color variables
 
 $color-primary      : $viking;
@@ -49,21 +70,8 @@ $color-body         : $white;
 
 $base__font-size  : 18px;
 $base__line       : 28px;
-$letter-space     : 1px;
 
-// font stacks
 
-$font-url--google         : 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
-$font-family--primary     : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family--secondary   : 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-// font weights
-
-$font-weight--thin        : 100;
-$font-weight--light       : 300;
-$font-weight--medium      : 400;
-$font-weight--bold        : 700;
-$font-weight--extra-bold  : 900;
 
 // border radius
 

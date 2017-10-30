@@ -1,22 +1,9 @@
+
+
 .btn {
-  @include m(default){
-    @extend %btn;
-    background-color: $malibu;
-  }
-  @include m(success){
-    @extend %btn;
-    background-color: $emerald;
-  }
-  @include m(error){
-    @extend %btn;
-    background-color: $sunglo;
-  }
-  @include m(warning){
-    @extend %btn;
-    background-color: $coral;
-  }
-  @include m(info){
-    @extend %btn;
-    background-color: $purple-majesty;
-  }
+  @include bg-colors($ui-colors);
+}
+
+.theme__colors {
+  @extend %btn;
 }

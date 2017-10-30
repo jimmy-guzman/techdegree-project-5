@@ -1,16 +1,5 @@
-/*
-$g-colors {
-  3: $french-lilac,
-  4: $anakiwa,
-  5: $vista-blue,
-  6: $shakespeare,
-  7: $sea-pink,
-  8: $vivid-tangerine,
-  12: $riptide
-
-*/
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
-.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+.theme__colors {
   display: block;
   width: 100%;
   margin: 1.3em auto;
@@ -21,7 +10,7 @@ $g-colors {
   padding: .95em;
   font-size: .85em; }
   @media (min-width: 769px) {
-    .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+    .theme__colors {
       margin: 0 1.3em; } }
 
 .grid__col--1, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--11, .grid__col--12 {
@@ -383,21 +372,31 @@ $g-colors {
   .grid__col--12 {
     width: 100%; } }
 .grid__col--3.theme__colors {
-  background-color: #deb2ee; }
+  background-color: #deb2ee;
+  font-weight: 700;
+  padding: .95em; }
 .grid__col--4.theme__colors {
-  background-color: #7ee6fd; }
+  background-color: #7ee6fd;
+  font-weight: 700;
+  padding: .95em; }
 .grid__col--5.theme__colors {
-  background-color: #88d9a0; }
+  background-color: #88d9a0;
+  font-weight: 700;
+  padding: .95em; }
 .grid__col--6.theme__colors {
-  background-color: #3fabca; }
+  background-color: #3fabca;
+  font-weight: 700;
+  padding: .95em; }
 .grid__col--7.theme__colors {
-  background-color: #ec9fa3; }
+  background-color: #ec9fa3;
+  font-weight: 700;
+  padding: .95em; }
 .grid__col--8.theme__colors {
-  background-color: #fd9f85; }
+  background-color: #fd9f85;
+  font-weight: 700;
+  padding: .95em; }
 .grid__col--12.theme__colors {
-  background-color: #80e8d1; }
-
-.theme__colors {
+  background-color: #80e8d1;
   font-weight: 700;
   padding: .95em; }
 
