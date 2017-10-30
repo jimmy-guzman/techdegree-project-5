@@ -5,11 +5,16 @@
   }
   @include m(avatar){
     display: block;
-    margin: 1.3em auto 4.6em;
+    margin:  auto;
+    align-self: center;
   }
   @include m(frame){
+    margin: auto;
     width: 100%;
     padding: .75em;
     border: solid $grey 1px;
+    @include mq(medium){
+      width: 85%;
+    }
   }
 }

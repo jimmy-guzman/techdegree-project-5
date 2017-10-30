@@ -8,6 +8,9 @@
   border-radius: $br--default;
   padding: .95em;
   font-size: .85em;
+  @include mq(medium){
+    margin: 0 1.3em;
+  }
 }
 
 %grid-block {
@@ -15,4 +18,8 @@
   display: block;
   border-radius: $br--default;
   width: 100%;
+  @include mq(medium){
+      @include flex($disp: flex, $just: space-around);
+      align-items: center;
+  }
 }

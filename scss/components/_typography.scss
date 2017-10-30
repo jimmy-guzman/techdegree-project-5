@@ -10,8 +10,11 @@
 
 .headline {
   @include m(secondary) {
-      margin-top: 5.4em;
+      margin: 5.4em 0 1.3em;
       font-weight: $font-weight--light;
+      @include mq(medium){
+        margin-top: 1.3em;
+      }
   }
   @include m(primary) {
     margin-left: 0.6em;

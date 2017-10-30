@@ -6,7 +6,9 @@
     display: block;
     list-style: none;
     text-align: center;
-
+    @include mq(medium) {
+      align-self: center;
+    }
     a {
       padding: 1em;
       display: block;
@@ -18,5 +20,9 @@
         background-color: $color-primary;
       }
     }
+  }
+  @include mq(medium) {
+     @include flex($disp:flex, $just: space-between);
+    margin: auto;
   }
 }

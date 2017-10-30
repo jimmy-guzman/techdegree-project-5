@@ -1,5 +1,6 @@
 .form {
-  margin-bottom: 2.6em;
+  width: 100%;
+  margin: 0 auto;
   @include e(input) {
     display: block;
     width: 90%;
@@ -14,5 +15,11 @@
      @include m(hidden){
       display: none;
     }
+  }
+  :last-child{
+    margin: auto;
+  }
+  @include mq(medium){
+    @include flex($disp: flex, $flow: column, $just: center);
   }
 }
