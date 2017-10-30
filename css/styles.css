@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
-.theme__colors {
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  font-weight: 700;
   display: block;
   width: 100%;
   margin: 1.3em auto;
@@ -10,7 +11,7 @@
   padding: .95em;
   font-size: .85em; }
   @media (min-width: 769px) {
-    .theme__colors {
+    .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
       margin: 0 1.3em; } }
 
 .grid__col--1, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--11, .grid__col--12 {
@@ -57,7 +58,7 @@
   border-radius: 0.3em; }
 
 .container {
-  margin: 1.3em auto;
+  margin: 1.3em auto 5.4em;
   width: 85%; }
   @media (min-width: 769px) {
     .container {
@@ -374,31 +375,38 @@
 .grid__col--3.theme__colors {
   background-color: #deb2ee;
   font-weight: 700;
-  padding: .95em; }
+  font-size: 16px;
+  padding: .85em; }
 .grid__col--4.theme__colors {
   background-color: #7ee6fd;
   font-weight: 700;
-  padding: .95em; }
+  font-size: 16px;
+  padding: .85em; }
 .grid__col--5.theme__colors {
   background-color: #88d9a0;
   font-weight: 700;
-  padding: .95em; }
+  font-size: 16px;
+  padding: .85em; }
 .grid__col--6.theme__colors {
   background-color: #3fabca;
   font-weight: 700;
-  padding: .95em; }
+  font-size: 16px;
+  padding: .85em; }
 .grid__col--7.theme__colors {
   background-color: #ec9fa3;
   font-weight: 700;
-  padding: .95em; }
+  font-size: 16px;
+  padding: .85em; }
 .grid__col--8.theme__colors {
   background-color: #fd9f85;
   font-weight: 700;
-  padding: .95em; }
+  font-size: 16px;
+  padding: .85em; }
 .grid__col--12.theme__colors {
   background-color: #80e8d1;
   font-weight: 700;
-  padding: .95em; }
+  font-size: 16px;
+  padding: .85em; }
 
 .img--logo {
   display: block;
@@ -465,12 +473,16 @@
 
 .btn--default {
   background-color: #51ddfc; }
+
 .btn--success {
   background-color: #63cc82; }
+
 .btn--error {
   background-color: #e4757a; }
+
 .btn--warning {
   background-color: #fd7856; }
+
 .btn--info {
   background-color: #927bc1; }
 
