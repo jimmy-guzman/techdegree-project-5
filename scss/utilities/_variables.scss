@@ -24,14 +24,7 @@ $emerald          : #63cc82;
 $sunglo           : #e4757a;
 $coral            : #fd7856;
 $purple-majesty   : #927bc1;
-
-$riptide          : #80e8d1;
-$shakespeare      : #3fabca;
-$anakiwa          : #7ee6fd;
 $french-lilac     : #deb2ee;
-$vista-blue       : #88d9a0;
-$sea-pink         : #ec9fa3;
-$vivid-tangerine  : #fd9f85;
 
 $ui-colors: (
   default : $malibu,
@@ -43,12 +36,12 @@ $ui-colors: (
 
 $grid-colors: (
   3: $french-lilac,
-  4: $anakiwa,
-  5: $vista-blue,
-  6: $shakespeare,
-  7: $sea-pink,
-  8: $vivid-tangerine,
-  12: $riptide
+  4: lighten($malibu, 10%),
+  5: lighten($emerald, 10%),
+  6: darken($malibu, 25%),
+  7: lighten($sunglo, 10%),
+  8: lighten($coral, 10%),
+  12: lighten($viking, 10%)
 );
 
 //functional color variables
@@ -63,7 +56,7 @@ $color-text-dark    : $bright-grey;
 $color-link-default : $malibu;
 $color-link-visited : $bright-grey;
 
-$color-shadow       : rgba($black, .8);
+$color-image-border : lighten($grey, 30%);
 $color-body         : $white;
 
 // text

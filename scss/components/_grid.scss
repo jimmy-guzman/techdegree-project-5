@@ -1,7 +1,7 @@
 .container {
   margin: 1.3em auto 5.4em;
   width: 85%;
-  @include mq(medium){
+  @include mq(medium) {
     width: 75%;
   }
 }
@@ -16,11 +16,11 @@
     }
   }
   @include e(col) {
-     @for $i from 1 through 12{
+    @for $i from 1 through 12 {
       &--#{$i} {
         @extend %grid-block;
       }
-      @include mq(medium){
+      @include mq(medium) {
         @include g-columns;
       }
     }
@@ -29,7 +29,7 @@
         background-color: $color;
         font-weight: $font-weight--bold;
         font-size: 16px;
-        padding: .85em;
+        padding: 0.85em;
       }
     }
   }

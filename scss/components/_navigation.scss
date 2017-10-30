@@ -3,26 +3,10 @@
   margin: 2.6em auto 5.4em;
   padding: 0;
   @include e(item) {
-    display: block;
-    list-style: none;
-    text-align: center;
-    @include mq(medium) {
-      align-self: center;
-    }
-    a {
-      padding: 1em;
-      display: block;
-      text-decoration: none;
-      border-radius: $br--default;
-
-      &:hover {
-        color: $white;
-        background-color: $color-primary;
-      }
-    }
+    @extend %nav-item;
   }
   @include mq(medium) {
      @include flex($disp:flex, $just: space-between);
-    margin: auto;
+     margin: auto;
   }
 }

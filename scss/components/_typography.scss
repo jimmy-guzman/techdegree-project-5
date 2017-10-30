@@ -1,5 +1,5 @@
 * {
-  color: $grey;
+  color: $color-text-base;
   font-size: $base__font-size;
   font-family: $font-family--primary;
 }
@@ -10,30 +10,26 @@
 
 .headline {
   @include m(secondary) {
-      margin: 5.4em 0 1.3em;
-      font-weight: $font-weight--light;
-      @include mq(medium){
-        margin-top: 2.6em;
-      }
+    @extend %h-secondary;
+    @include mq(medium) {
+      margin-top: 2.6em;
+    }
   }
   @include m(primary) {
-    margin-left: 0.6em;
-    line-height: 1;
-    color: $color-primary;
-    font-weight: $font-weight--ultra-bold;
+    @extend %h-primary;
   }
 }
 
 .link {
-  color: $malibu;
-  text-decoration: none;
-  font-weight: $font-weight--bold;
+  @extend %link;
 }
 
 .blockquote {
-  font-size: 1.3em;
-  padding-left: 1.15em;
+  font-size: 1.35em;
+  padding-left: 1.5em;
   font-style: italic;
-  border-left: solid $color-primary .4em;
+  border-left: solid $color-primary 0.4em;
   border-radius: $br--default;
+  line-height: 1.2;
+  font-weight: $font-weight--medium;
 }

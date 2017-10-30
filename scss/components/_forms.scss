@@ -12,14 +12,15 @@
     margin: 1em auto 1.3em;
   }
   @include e(label) {
-     @include m(hidden){
+    @include m(hidden) {
       display: none;
     }
   }
-  :last-child{
+
+  :last-child {
     margin: auto;
   }
-  @include mq(medium){
+  @include mq(medium) {
     @include flex($disp: flex, $flow: column, $just: center);
   }
 }
