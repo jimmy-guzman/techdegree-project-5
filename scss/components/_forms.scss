@@ -9,7 +9,7 @@
     font-weight: $font-weight--bold;
     font-size: 0.95em;
     padding: 0.65em;
-    margin: 0 auto 1.3em;
+    margin: 1em auto 1.3em;
   }
   @include e(label) {
      @include m(hidden){

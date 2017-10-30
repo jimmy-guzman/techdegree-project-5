@@ -48,7 +48,7 @@ $g-colors {
   font-weight: 300; }
   @media (min-width: 769px) {
     .headline--secondary {
-      margin-top: 1.3em; } }
+      margin-top: 2.6em; } }
 .headline--primary {
   margin-left: 0.6em;
   line-height: 1;
@@ -70,6 +70,9 @@ $g-colors {
 .container {
   margin: 1.3em auto;
   width: 85%; }
+  @media (min-width: 769px) {
+    .container {
+      width: 75%; } }
 
 .grid__row {
   margin-top: 2.6em;
@@ -450,7 +453,7 @@ $g-colors {
     font-weight: 700;
     font-size: 0.95em;
     padding: 0.65em;
-    margin: 0 auto 1.3em; }
+    margin: 1em auto 1.3em; }
   .form__label--hidden {
     display: none; }
   .form :last-child {
