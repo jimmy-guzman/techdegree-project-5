@@ -2,7 +2,7 @@
   font-weight: $font-weight--bold;
   display: block;
   width: 100%;
-  margin: 1.3em auto;
+  margin: .65em auto;
   color: $color-text-light;
   text-transform: uppercase;
   border: none;
@@ -17,12 +17,13 @@
 %grid-theme-styles {
   font-weight: $font-weight--bold;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
   padding: 0.85em;
   display: block;
   border-radius: $br--default;
   margin: 0.35em auto;
   @include mq(medium){
+    text-align: center;
     margin: 0 auto;
   }
 }
@@ -38,6 +39,7 @@
   text-align: center;
 
   a {
+    width: 100%;
     padding: 1em;
     display: block;
     text-decoration: none;

@@ -18,8 +18,12 @@
   @include e(col) {
     @for $i from 3 through 12 {
       &--#{$i} {
-        @include flex($disp: flex, $just: space-around);
-        align-items: center;
+        @include flex($disp: flex, $flow: column, $just: space-around);
+
+        @include mq(medium){
+          @include flex($disp: flex, $flow: row, $just: space-around);
+            align-items: center;
+        }
       }
     }
     @include bg-colors($grid-colors, ".theme__colors") {
