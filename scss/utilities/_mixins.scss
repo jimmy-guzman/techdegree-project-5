@@ -51,3 +51,15 @@
     }
   }
 }
+
+//bg-colors
+
+
+@mixin bg-colors ($map, $selector: null) {
+  @each $theme, $color in $map {
+    &--#{$theme}#{$selector} {
+      background-color: $color;
+      @content;
+    }
+  }
+}

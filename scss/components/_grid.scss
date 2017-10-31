@@ -16,21 +16,17 @@
     }
   }
   @include e(col) {
-    @for $i from 1 through 12 {
+    @for $i from 3 through 12 {
       &--#{$i} {
-        @extend %grid-block;
-      }
-      @include mq(medium) {
-        @include g-columns;
+        @include flex($disp: flex, $just: space-around);
+        align-items: center;
       }
     }
-    @each $number, $color in $grid-colors {
-      &--#{$number}.theme__colors {
-        background-color: $color;
-        font-weight: $font-weight--bold;
-        font-size: 16px;
-        padding: 0.85em;
-      }
+    @include bg-colors($grid-colors, ".theme__colors") {
+      @extend %grid-theme-styles;
+    }
+    @include mq(medium) {
+      @include g-columns;
     }
   }
 }

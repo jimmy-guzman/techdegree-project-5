@@ -14,14 +14,16 @@
   }
 }
 
-%grid-block {
-  margin: 0.35em auto;
+%grid-theme-styles {
+  font-weight: $font-weight--bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.85em;
   display: block;
   border-radius: $br--default;
-  width: 100%;
-  @include mq(medium) {
-    @include flex($disp: flex, $just: space-around);
-    align-items: center;
+  margin: 0.35em auto;
+  @include mq(medium){
+    margin: 0 auto;
   }
 }
 
@@ -40,6 +42,10 @@
     display: block;
     text-decoration: none;
     border-radius: $br--default;
+    @include mq(medium){
+      margin-right: 1em;
+      padding: .5em;
+    }
 
     &:hover {
       color: $color-text-light;

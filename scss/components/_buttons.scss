@@ -1,6 +1,6 @@
-@each $theme, $color in $ui-colors {
-  .btn--#{$theme} {
+
+.btn {
+  @include bg-colors($ui-colors){
     @extend %btn;
-    background-color: $color;
   }
 }
