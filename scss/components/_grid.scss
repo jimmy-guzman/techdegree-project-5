@@ -12,18 +12,20 @@
     width: 100%;
     @include mq(medium) {
       @include flex($disp:flex, $just: space-between);
-      align-items: center;
     }
   }
   @include e(col) {
-    @for $i from 3 through 12 {
-      &--#{$i} {
+    &--9 {
+      @include mq(medium) {
         @include flex($disp: flex, $flow: column, $just: space-around);
+        align-items: center;
+      }
+    }
 
-        @include mq(medium){
-          @include flex($disp: flex, $flow: row, $just: space-around);
-            align-items: center;
-        }
+    &--12 {
+      @include mq(medium) {
+        @include flex($disp: flex, $flow: row, $just: space-around);
+        align-items: center;
       }
     }
     @include bg-colors($grid-colors, ".theme__colors") {

@@ -7,6 +7,7 @@
   }
   @include mq(medium) {
      @include flex($disp:flex, $just: space-between);
+     align-items: center;
      margin: auto;
   }
 }
